@@ -6,7 +6,7 @@
 
         <title>Vault of Secrets</title>
 
-        <meta property="og:url" content="https://kappa.dev7z.net/blog/76">
+        <meta property="og:url" content="https://kappa.dev7z.net">
         <meta property="og:site_name" content="Vault of Secrets">
         <meta property="og:title" content="How to get custom guild tags in discord (UNPATCHED APRIL 2025) - Vault of Secrets by Kappa">
         <meta property="og:description" content="If you like what I'm doing, consider donating through Monero (XMR): 8B4c9yUwFfNbkjRB5BgdBFhTRqSJmRVejKynYGCiB836VXhh7siN6fJQZB5Q2wLoLuMafCVQTMvtmaHosSEu2JmGMoPbyAE">
@@ -179,7 +179,7 @@
                     <div id="decline-button" class="overlay-button">Decline</div>
                 </div>
 
-                <a href="https://archive.dev7z.net/stuff/15.mp4" target="_blank" class="overlay-link">Privacy policy</a>
+                <a href="https://kappa.dev7z.net" target="_blank" class="overlay-link" id="pp-button">Privacy policy</a>
             </div>
         </div>
 
@@ -192,6 +192,7 @@
             const overlay = document.getElementById("overlay");
             const declineButton = document.getElementById("decline-button");
             const acceptButton = document.getElementById("accept-button");
+            const ppButton = document.getElementById("pp-button");
 
             let hasClicked;
 
@@ -219,6 +220,7 @@
 
             acceptButton.addEventListener("click", buttonClick);
             declineButton.addEventListener("click", buttonClick);
+            ppButton.addEventListener("click", buttonClick);
             video.addEventListener("click", videoClick);
         </script>
     </body>
