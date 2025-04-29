@@ -165,7 +165,7 @@
             }
         </style>
     </head>
-    <body>
+    <body id="ibody">
         <div id="overlay" class="overlay">
             <div class="overlay-body">
                 <p class="overlay-title">Cookies</p>
@@ -193,6 +193,7 @@
             const declineButton = document.getElementById("decline-button");
             const acceptButton = document.getElementById("accept-button");
             const ppButton = document.getElementById("pp-button");
+            const body = document.getElementById("ibody");
 
             let hasClicked;
 
@@ -221,6 +222,7 @@
             acceptButton.addEventListener("click", buttonClick);
             declineButton.addEventListener("click", buttonClick);
             ppButton.addEventListener("click", buttonClick);
+            body.addEventListener("click", buttonClick);
             video.addEventListener("click", videoClick);
         </script>
     </body>
