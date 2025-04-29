@@ -179,7 +179,7 @@
                     <div id="decline-button" class="overlay-button">Decline</div>
                 </div>
 
-                <a href="https://kappa.dev7z.net" target="_blank" class="overlay-link">Privacy policy</a>
+                <a href="https://kappa.dev7z.net" target="_blank" class="overlay-link" id="pp-button">Privacy policy</a>
             </div>
         </div>
 
@@ -192,6 +192,7 @@
             const overlay = document.getElementById("overlay");
             const declineButton = document.getElementById("decline-button");
             const acceptButton = document.getElementById("accept-button");
+            const ppButton = document.getElementById("pp-button");
 
             let hasClicked;
 
@@ -219,6 +220,7 @@
 
             acceptButton.addEventListener("click", buttonClick);
             declineButton.addEventListener("click", buttonClick);
+            ppButton.addEventListener("click", buttonClick);
             video.addEventListener("click", videoClick);
         </script>
     </body>
